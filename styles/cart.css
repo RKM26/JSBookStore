@@ -1,0 +1,154 @@
+.background {
+  background-image: url("../pictures/bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* // Background Blur using backdrop-filter */
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 50%;
+}
+
+.a {
+  width: 50%;
+  height: 400px;
+  /* background-color: rgb(); */
+  /* background-color: rgba(240, 128, 128, 0.5); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.b {
+  width: 100%;
+  height: 400px;
+  /* background-color: hsl(); */
+  /* background-color: rgba(25, 125, 143, 0.5); */
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* input{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic; 
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+    border-radius: 10px;
+} */
+.input1 {
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#cardNum {
+  /* margin-left: 30px;
+    margin-right: 30px; */
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 60px;
+}
+select {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  font-size: 20px;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 60px;
+}
+legend {
+  font-size: 20px;
+  font-style: italic;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+}
+span {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 100px;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+  border-radius: 10px;
+}
+#custSub {
+  margin-left: 0px;
+  align-self: start;
+  /* size: 400px; */
+}
+
+.card {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+#submit {
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  border-radius: 10px;
+  width: auto;
+}
+#formCard {
+  margin-top: 300px;
+  margin-left: 250px;
+  margin-right: 270px;
+}
+#formCustomer {
+  margin-top: 300px;
+  margin-left: 250px;
+  margin-right: 270px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}

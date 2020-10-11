@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <title>Online bookstore - Cart</title>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="purchase.html">Cart</a></li>
+      <li><a href="cart.html">purchase</a></li>
+    </ul>
+    <div class="background">
+      <div id="a" class="a">
+        <form id="formCustomer">
+          <fieldset>
+            <legend>Customer Details</legend>
+            <input
+              class="input1"
+              id="custName"
+              type="text"
+              required
+              placeholder="Customer Name"
+            />
+            <input
+              class="input1"
+              id="custEmail"
+              type="email"
+              required
+              placeholder="Customer Email"
+            />
+            <input
+              class="input1"
+              id="custNumber"
+              type="tel"
+              required
+              placeholder="Tele/Phone number"
+            />
+            <input
+              class="input1"
+              id="custAddress"
+              type="text"
+              required
+              placeholder="Address"
+            />
+            <div id="check" style="margin-top: 10px; width: 100%">
+              <span style="color: seashell">Subscription</span>
+              <input id="custSub" type="checkbox" required />
+            </div>
+          </fieldset>
+        </form>
+        <br />
+        <br />
+        <br />
+        <fieldset
+          style="
+            margin-left: 670px;
+            width: auto;
+            height: 200px;
+            text-align: center;
+          "
+        >
+          <legend></legend>
+          <label style="font-size: x-large; margin-left: 00px; color: white"
+            >TOTAL =
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="blur">
+        <div id="b" class="b">
+          <div id="card">
+            <form name="formName" id="formCard">
+              <fieldset>
+                <legend>Card Details</legend>
+
+                <legend>Card Number</legend>
+                <input
+                  id="cardNum"
+                  type="number"
+                  maxlength="4"
+                  oninput="autotab(this, document.formName.inputName1)"
+                />
+                <input
+                  id="cardNum"
+                  type="number"
+                  maxlength="4"
+                  oninput="autotab(this, document.formName.inputName2)"
+                  name="inputName1"
+                />
+                <input
+                  id="cardNum"
+                  type="number"
+                  max="4"
+                  min="2"
+                  maxlength="4"
+                  oninput="autotab(this, document.formName.inputName3)"
+                  name="inputName2"
+                />
+                <input
+                  id="cardNum"
+                  type="number"
+                  maxlength="4"
+                  oninput="autotab(this, document.formName.month)"
+                  name="inputName3"
+                  max="4"
+                  min="2"
+                /><br />
+
+                <legend>Exp. Date</legend>
+                <select name="month">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+
+                <select style="width: auto" name="year">
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                </select>
+
+                <legend>CVV</legend>
+                <input
+                  id="cardNum"
+                  type="number"
+                  maxlength="3"
+                  oninput="autotab(this, document.formName.submit)"
+                />
+
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Purchase"
+                  id="submit"
+                />
+              </fieldset>
+            </form>
+            <br />
+            <br />
+            <br />
+            <fieldset
+              style="
+                margin-right: 680px;
+                width: auto;
+                height: 30px;
+                margin-bottom: 16px;
+                text-align: center;
+              "
+            >
+              <legend></legend>
+              <label
+                id="finalPriceLabel"
+                style="font-size: xx-large; margin-left: 00px; color: white"
+              ></label>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function autotab(current, to) {
+        if (
+          current.getAttribute &&
+          current.value.length == current.getAttribute("maxlength")
+        ) {
+          to.focus();
+        }
+      }
+    </script>
+    <script src="scripts/createDB.js"></script>
+    <script src="scripts/cart.js"></script>
+  </body>
+</html>
